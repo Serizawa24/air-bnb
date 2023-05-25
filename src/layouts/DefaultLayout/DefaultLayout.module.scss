@@ -1,0 +1,6 @@
+.wrapper{
+}
+.container{
+  padding-top: calc(var( --default-layout-header-height) + var(--default-layout-filter-height));
+  padding-bottom: var( --default-layout-footer-height );
+}

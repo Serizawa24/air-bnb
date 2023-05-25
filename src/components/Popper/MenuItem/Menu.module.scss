@@ -1,0 +1,38 @@
+.menu-items{
+  width: 240px;
+
+}
+.menu-list{
+  width: 100%;
+  text-align: start;
+  margin: 0 !important;
+  justify-content: start;
+  font-size: 1.4rem;
+  font-style:normal;
+  font-weight: 300;
+  color:var(--text-black);
+  &:hover {
+    background-color: var(--background-white-hover);
+  }
+}
+.active{
+  font-weight: 600;
+}
+///
+.header{
+  position: relative;
+  height: 50px;
+
+}
+.back-btn{
+  width: 50px;
+  height: 100%; 
+  background-color: transparent ;
+  cursor: pointer; 
+}
+.title {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}

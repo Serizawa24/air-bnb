@@ -1,0 +1,23 @@
+ required: function(value) {
+            return value ? undefined : "Trường này là bắt buộc!"
+        },
+        username : function(value) {
+            const regex = /^[a-z0-9_-]{6,15}$/gm;
+            return regex.test(value) ? undefined : "Username không hợp lệ!";
+        }
+        ,
+        email : function(value) {
+            const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+            return regex.test(value) ? undefined : "Vui lòng nhập đúng email";
+        },
+        password : function(value) {
+            const regex =
+                /(?=[A-Za-z0-9@#$%^&+!=]+$)^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,}).*$/g;
+              return regex.test(value)
+                ? undefined
+                : "Mật khẩu có ít nhất 6 kí tự, 1 chữ Hoa, 1 chữ thường và 1 số";
+        },
+        confirm : function(value) {
+            const pass = $("#password").value
+            return pass === value ? undefined : "Mật khẩu xác nhận không chính xác!";
+        },

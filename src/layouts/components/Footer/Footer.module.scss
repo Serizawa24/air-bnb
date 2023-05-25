@@ -1,0 +1,39 @@
+.footer {
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  background-color: var(--background-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 var(--default-layout-padding);
+  border-top: 1px solid var(--gray) ;
+  z-index: 10;
+}
+.map{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  padding: 5px 0;
+}
+.help{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.author {
+  font-size: 1.4rem;
+  color:var(--gray-hard);
+  padding-right: 14px;
+}
+
+.dot {
+  width: 2px;
+  height: 2px;
+  background-color: black;
+  border-radius: 50%;
+}

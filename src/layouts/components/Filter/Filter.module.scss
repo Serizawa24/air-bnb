@@ -1,0 +1,38 @@
+.filter{
+  padding: 0 var(--default-layout-padding);
+  height: var(--default-layout-filter-height);
+  border-bottom: 1px solid var(--gray);
+  position: fixed;
+  top:var(--default-layout-header-height);
+  background-color: var(--background-white);
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+.wrapper {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  height: var(--default-layout-filter-height);
+  &::-webkit-scrollbar{
+    display: none;
+  }
+} 
+
+.left,.right{
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    scale: 1.2;
+  }
+}
+
+.left{
+  position: absolute;
+  left:calc(var(--default-layout-padding));
+  z-index: 11;
+}
+.right {
+  position: absolute;
+  right:calc(var(--default-layout-padding));
+  z-index: 11;
+}
